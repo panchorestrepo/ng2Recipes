@@ -1,6 +1,7 @@
 "use strict";
 var Recipe = (function () {
-    function Recipe(name, content, imageUrl, ingredients) {
+    function Recipe(id, name, content, imageUrl, ingredients) {
+        this.id = id;
         this.name = name;
         this.content = content;
         this.imageUrl = imageUrl;

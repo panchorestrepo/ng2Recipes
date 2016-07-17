@@ -11,10 +11,11 @@ import { ROUTER_DIRECTIVES} from '@angular/router';
     </div>
     <div class="detail">
      Receipt Detail Paco
+     <router-outlet></router-outlet>
     </div>
   `,
   providers : [RecipeService],
-  directives: [RecipeListComponent]
+  directives: [ROUTER_DIRECTIVES,RecipeListComponent]
 
 })
 export class RecipesComponent {
